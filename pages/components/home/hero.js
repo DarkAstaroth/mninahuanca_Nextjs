@@ -42,10 +42,10 @@ const Hero = (props) => {
               className="col-lg-6 offset-lg-1 col-xxl-5 text-center text-lg-start"
             >
               <h1 className="display-1 mb-5">
-                Hi! Im a FrontEnd & BackEnd Developer
+                Hi! I&apos;m a FrontEnd & BackEnd Developer
               </h1>
               <p className="lead fs-25 lh-sm mb-7 px-md-10 px-lg-0">
-                Hello! Im Manuel, a freelance
+                Hello! I&apos;m Manuel, a freelance
                 developer based in Bolivia. I’m very passionate about the work
                 that I do.
               </p>

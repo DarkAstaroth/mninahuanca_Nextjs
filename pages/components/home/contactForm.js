@@ -15,7 +15,7 @@ const ContactForm = () => {
                     alt=""
                   /> */}
                   <h2 className="display-4 mb-3 pe-lg-10">
-                    If you like what you see, let's work together.
+                    If you like what you see, let&apos;s work together.
                   </h2>
                   <p className="lead pe-lg-12 mb-0">
                     I bring rapid solutions to make the life of my clients
