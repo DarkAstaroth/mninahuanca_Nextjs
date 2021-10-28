@@ -1,4 +1,4 @@
-console.log("hola");
+
 /*!
  * backgroundVideo.js v2.0.3
  * https://github.com/linnett/backgroundVideo

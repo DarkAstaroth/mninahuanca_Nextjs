@@ -2,12 +2,13 @@ import React from "react";
 import Script from "next/script";
 import Header from "./header";
 
-
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
+      <section className="bg-soft-blue">
+        <Header />
       <h1>hola</h1>
+      </section>
       <main>{children}</main>
       <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -22,6 +23,8 @@ const Layout = ({ children }) => {
       <Script src="/js/plugins.js"></Script>
       <Script src="/js/headhesive.min.js"></Script>
       <Script src="/js/svg-inject.min.js"></Script>
+      <Script src="/js/backgroundvideo.min.js"></Script>
+      <Script src="/js/scrollCue.min.js"></Script>
       <Script src="/js/theme.js"></Script>
     </>
   );
