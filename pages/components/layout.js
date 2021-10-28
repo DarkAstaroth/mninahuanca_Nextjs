@@ -20,6 +20,8 @@ const Layout = ({ children }) => {
         crossorigin="anonymous"
       ></Script>
       <Script src="/js/plugins.js"></Script>
+      <Script src="/js/headhesive.min.js"></Script>
+      <Script src="/js/svg-inject.min.js"></Script>
       <Script src="/js/theme.js"></Script>
     </>
   );
