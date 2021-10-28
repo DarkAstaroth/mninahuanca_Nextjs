@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -13,6 +14,12 @@ const Header = () => {
                   srcSet="./assets/img/logo@2x.png 2x"
                   alt=""
                 /> */}
+                <Image
+                  src="/img/mninahuanca-logo.png"
+                  alt="Manuel Ninahuanca"
+                  width="200 "
+                  height="53"
+                />
               </a>
             </div>
             <div className="navbar-collapse offcanvas-nav">
@@ -23,6 +30,12 @@ const Header = () => {
                     srcSet="./assets/img/logo-light@2x.png 2x"
                     alt=""
                   /> */}
+                  <Image
+                    src="/img/mninahuanca-logo.png"
+                    alt="Manuel Ninahuanca"
+                    width="150 "
+                    height="40"
+                  />
                 </a>
                 <button
                   type="button"
@@ -84,7 +97,7 @@ const Header = () => {
         </div>
       </nav>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

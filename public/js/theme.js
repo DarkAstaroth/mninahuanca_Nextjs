@@ -55,11 +55,11 @@
             unstick: "banner--unstick",
           },
           onStick: function () {
-            $($.SmartMenus.Bootstrap.init);
-            var $language_dropdown = $(
-              ".navbar:not(.fixed) .language-select .dropdown-menu"
-            );
-            $language_dropdown.removeClass("show");
+            // $($.SmartMenus.Bootstrap.init);
+            // var $language_dropdown = $(
+            //   ".navbar:not(.fixed) .language-select .dropdown-menu"
+            // );
+            // $language_dropdown.removeClass("show");
           },
           onUnstick: function () {
             var $language_sticky_dropdown = $(
