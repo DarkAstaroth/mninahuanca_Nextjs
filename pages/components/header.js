@@ -18,23 +18,18 @@ const Header = () => {
                   src="/img/mninahuanca-logo.png"
                   alt="Manuel Ninahuanca"
                   width="200 "
-                  height="53"
+                  height="32"
                 />
               </a>
             </div>
             <div className="navbar-collapse offcanvas-nav">
               <div className="offcanvas-header d-lg-none d-xl-none">
                 <a href="./index.html">
-                  {/* <img
-                    src="./assets/img/logo-light.png"
-                    srcSet="./assets/img/logo-light@2x.png 2x"
-                    alt=""
-                  /> */}
                   <Image
-                    src="/img/mninahuanca-logo.png"
+                    src="/img/mninahuanca-white.png"
                     alt="Manuel Ninahuanca"
                     width="150 "
-                    height="40"
+                    height="24.5"
                   />
                 </a>
                 <button
