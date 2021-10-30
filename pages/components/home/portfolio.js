@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Portfolio = () => {
   return (
@@ -15,9 +16,11 @@ const Portfolio = () => {
             </div>
 
             <div className="col-md-4 col-lg-3 ms-md-auto text-md-end mt-5 mt-md-0">
-              <a href="#" className="btn btn-primary rounded-pill mb-0">
-                See All Projects
-              </a>
+              <Link href="/portfolio">
+                <a className="btn btn-primary rounded-pill mb-0">
+                  See All Projects
+                </a>
+              </Link>
             </div>
           </div>
 
@@ -44,10 +47,10 @@ const Portfolio = () => {
                     <Image
                       className="img-fluid"
                       src="/img/photos/f1.png"
-                      srcset="/img/photos/f1@2x.png 2x"
+                      srcSet="/img/photos/f1@2x.png 2x"
                       alt=""
-                      width='658.33'
-                      height='374.73'
+                      width="658.33"
+                      height="374.73"
                     />
                   </figure>
                 </div>
@@ -78,10 +81,10 @@ const Portfolio = () => {
                     <Image
                       className="img-fluid"
                       src="/img/photos/f2.png"
-                      srcset="/img/photos/f2@2x.png 2x"
+                      srcSet="/img/photos/f2@2x.png 2x"
                       alt=""
-                      width='658.33'
-                      height='374.73'
+                      width="658.33"
+                      height="374.73"
                     />
                   </figure>
                 </div>
@@ -100,18 +103,18 @@ const Portfolio = () => {
                     consectetur cursus porta lobortis. Scelerisque id ligula
                     felis.
                   </p>
-                  <a href="#" className="more hover link-leaf mb-8">
-                    See Project
-                  </a>
+                  <Link href="/portfolio">
+                    <a className="more hover link-leaf mb-8">See Project</a>
+                  </Link>
                 </div>
 
                 <Image
                   className="card-img-bottom"
                   src="/img/photos/f3.png"
-                  srcset="/img/photos/f3@2x.png 2x"
+                  srcSet="/img/photos/f3@2x.png 2x"
                   alt=""
-                  width='658.33'
-                      height='374.73'
+                  width="658.33"
+                  height="374.73"
                 />
               </div>
             </div>
@@ -128,18 +131,18 @@ const Portfolio = () => {
                     est at lobortis. Scelerisque id ligula porta felis euismod
                     semper.
                   </p>
-                  <a href="#" className="more hover link-pink mb-8">
-                    See Project
-                  </a>
+                  <Link href="/portfolio">
+                    <a className="more hover link-pink mb-8">See Project</a>
+                  </Link>
                 </div>
 
                 <Image
                   className="card-img-bottom"
                   src="/img/photos/f4.png"
-                  srcset="/img/photos/f4@2x.png 2x"
+                  srcSet="/img/photos/f4@2x.png 2x"
                   alt=""
-                  width='658.33'
-                      height='374.73'
+                  width="658.33"
+                  height="374.73"
                 />
               </div>
             </div>

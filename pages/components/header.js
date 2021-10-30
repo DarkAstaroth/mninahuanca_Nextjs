@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -8,19 +9,16 @@ const Header = () => {
         <div className="container">
           <div className="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
             <div className="navbar-brand w-100">
-              <a href="./index.html">
-                {/* <img
-                  src="./assets/img/logo.png"
-                  srcSet="./assets/img/logo@2x.png 2x"
-                  alt=""
-                /> */}
-                <Image
-                  src="/img/mninahuanca-logo.png"
-                  alt="Manuel Ninahuanca"
-                  width="200 "
-                  height="32"
-                />
-              </a>
+              <Link href="/">
+                <a>
+                  <Image
+                    src="/img/mninahuanca-logo.png"
+                    alt="Manuel Ninahuanca"
+                    width="200 "
+                    height="32"
+                  />
+                </a>
+              </Link>
             </div>
             <div className="navbar-collapse offcanvas-nav">
               <div className="offcanvas-header d-lg-none d-xl-none">
@@ -40,25 +38,25 @@ const Header = () => {
               </div>
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link" href="!#">
-                    Home
-                  </a>
+                  <Link href="/">
+                    <a className="nav-link">Home</a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="!#">
-                    About
-                  </a>
+                  <Link href="/about">
+                    <a className="nav-link">About</a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="!#">
-                    Skills
-                  </a>
+                  <Link href="/#skills">
+                    <a className="nav-link">Skills</a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="!#">
-                    Portfolio
-                  </a>
+                  <Link href="/portfolio">
+                    <a className="nav-link">Portfolio</a>
+                  </Link>
                 </li>
               </ul>
             </div>

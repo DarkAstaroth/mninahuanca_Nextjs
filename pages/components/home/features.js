@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Features = () => {
   return (
@@ -15,10 +16,10 @@ const Features = () => {
                       <figure className="rounded mb-6">
                         <Image
                           src="/img/photos/se1.jpg"
-                          srcset="/img/photos/se1@2x.jpg 2x"
+                          srcSet="/img/photos/se1@2x.jpg 2x"
                           alt=""
-                          width='307.5'
-                          height='293.94'
+                          width="307.5"
+                          height="293.94"
                         />
                       </figure>
                     </div>
@@ -50,10 +51,10 @@ const Features = () => {
                       <figure className="rounded mb-6 mb-md-0">
                         <Image
                           src="/img/photos/se2.jpg"
-                          srcset="/img/photos/se2@2x.jpg 2x"
+                          srcSet="/img/photos/se2@2x.jpg 2x"
                           alt=""
-                          width='307.5'
-                          height='293.94'
+                          width="307.5"
+                          height="293.94"
                         />
                       </figure>
                     </div>
@@ -84,8 +85,8 @@ const Features = () => {
             <div className="col-lg-5 offset-lg-1">
               <h2 className="display-4 mb-3">What I Do?</h2>
               <p className="lead fs-lg">
-                The full service we are offering is specifically designed to
-                meet your business needs.
+                The full service I offer is specifically designed to meet your
+                business needs.
               </p>
               <p>
                 Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum
@@ -94,9 +95,9 @@ const Features = () => {
                 mollis ornare vel eu leo. Maecenas faucibus mollis elit
                 interdum. Duis mollis, est non commodo luctus, nisi erat ligula.{" "}
               </p>
-              <a href="#" className="btn btn-purple rounded-pill mt-3">
-                More Details
-              </a>
+              <Link href="/about">
+                <a className="btn btn-blue rounded-pill mt-3">More Details</a>
+              </Link>
             </div>
           </div>
         </div>
