@@ -1,13 +1,20 @@
 import React from "react";
-import Layout from "./components/layout";
+import HeadPage from "./components/head";
 import PortfolioHeader from "./components/portfolio/portfolioHeader";
+import useProjects from "../hooks/useProjects";
 
 const Portfolio = () => {
+  const { projects } = useProjects();
+  console.log(projects)
   return (
     <>
-      <Layout>
-        <PortfolioHeader />
-      </Layout>
+      <HeadPage title="mninahuanca | My porfolio!" />
+      <PortfolioHeader />
+      <div>
+        {projects.map((project) => (
+          <div key={project.id}>{project.title}</div>
+        ))}
+      </div>
     </>
   );
 };

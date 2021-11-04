@@ -24,20 +24,20 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div className="card bg-soft-violet mb-10">
-            <div className="card-body p-12 pb-0">
+          <div className="card bg-soft-leaf mb-10">
+            <div className="card-body p-12">
               <div className="row">
                 <div className="col-lg-4 pb-12 align-self-center">
-                  <div className="post-category mb-3 text-violet">
+                  <div className="post-category mb-3 text-leaf">
                     Web Design
                   </div>
-                  <h3 className="h1 post-title mb-3">Snowlake Theme</h3>
+                  <h3 className="h1 post-title mb-3">Natours Web Site</h3>
                   <p>
                     Maecenas faucibus mollis interdum sed posuere consectetur
                     est at lobortis. Scelerisque id ligula porta felis euismod
                     semper. Fusce dapibus tellus cursus.
                   </p>
-                  <a href="#" className="more hover link-violet">
+                  <a href="#" className="more hover link-leaf">
                     See Project
                   </a>
                 </div>
@@ -46,11 +46,12 @@ const Portfolio = () => {
                   <figure>
                     <Image
                       className="img-fluid"
-                      src="/img/photos/f1.png"
-                      srcSet="/img/photos/f1@2x.png 2x"
+                      src="/img/projects/natours.png"
+                      srcSet="/img/projects/natours.png"
                       alt=""
                       width="658.33"
                       height="374.73"
+                      layout="responsive"
                     />
                   </figure>
                 </div>
