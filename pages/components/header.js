@@ -49,7 +49,7 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/#skills">
+                  <Link href="/skills">
                     <a className="nav-link">Skills</a>
                   </Link>
                 </li>

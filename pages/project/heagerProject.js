@@ -1,6 +1,6 @@
 import React from "react";
 
-const HeaderProject = (props) => {
+const HeaderProject = ({props}) => {
   return (
     <>
       <section className="wrapper bg-soft-primary">
@@ -15,7 +15,7 @@ const HeaderProject = (props) => {
                 </div>
 
                 <h1 className="display-1 mb-3">
-                  Commodo Dolor Bibendum Parturient Cursus Mollis
+                  {props.title}
                 </h1>
                 <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
                   Integer posuere erat a ante venenatis dapibus posuere.

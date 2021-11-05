@@ -5,8 +5,15 @@ const HeadPage = (props) => {
   return (
     <>
       <Head>
-          <title>{props.title}</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" href="/mn-favicon.png" />
+        <title>{props.title}</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
     </>
   );

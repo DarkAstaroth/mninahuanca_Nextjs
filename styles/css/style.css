@@ -5,7 +5,7 @@ Theme URI:	https://sandbox.elemisthemes.com/start.html
 Version:	1.2.1
 Author:		elemis
 */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700");
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700"); */
 
 :root {
   --bs-gray-100: #f8f9fa;
@@ -89,7 +89,7 @@ Author:		elemis
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family:"Manrope",sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);

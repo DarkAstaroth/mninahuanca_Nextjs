@@ -9,9 +9,7 @@ const useProjects = (orden, type) => {
   useEffect(() => {
     const getProjects = async () => {
       try {
-        firebase.db
-          .collection("projects")
-          .onSnapshot(handleSnapchot);
+        firebase.db.collection("projects").onSnapshot(handleSnapchot);
       } catch (error) {
         console.log(error);
       }
@@ -22,7 +20,7 @@ const useProjects = (orden, type) => {
   function handleSnapchot(snapshot) {
     const projects = snapshot.docs.map((doc) => {
       return {
-        id: doc.id,
+        _id: doc.id,
         ...doc.data(),
       };
     });

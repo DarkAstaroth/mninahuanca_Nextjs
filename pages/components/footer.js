@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="d-md-flex align-items-center justify-content-between">
             <p className="mb-2 mb-lg-0">
               © 2021 mninahuanca. Always made with love{" "}
-              <span className="text-danger fs-25">	&#10084;</span>
+              <span className="text-danger fs-25"> &#10084;</span>
             </p>
             <nav className="nav social social-muted mb-0 text-md-end">
               <a href="!#">
@@ -44,6 +44,8 @@ const Footer = () => {
       ></Script>
 
       <Script src="/js/headhesive.js"></Script>
+      <Script src="/js/isotope.pkgd.min.js"></Script>
+      <Script src="/js/imagesloaded.pkgd.min.js"></Script>
       <Script src="/js/theme.js"></Script>
     </>
   );

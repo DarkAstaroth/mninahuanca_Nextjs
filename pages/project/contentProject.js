@@ -9,7 +9,7 @@ const ContentProject = (props) => {
             <div className="col-12">
               <article className="mt-n21">
                 <figure className="rounded mb-8 mb-md-12">
-                  <img src="./assets/img/photos/pp1.jpg" alt="" />
+                  <img src="/img/photos/pp1.jpg" alt="" />
                 </figure>
                 <div className="row">
                   <div className="col-lg-10 offset-lg-1">
@@ -58,25 +58,25 @@ const ContentProject = (props) => {
                 <div className="row mt-5 gx-md-6 gy-6">
                   <div className="item col-md-6">
                     <figure className="rounded">
-                      <img src="./assets/img/photos/pp2.jpg" alt="" />
+                      <img src="/img/photos/pp2.jpg" alt="" />
                     </figure>
                   </div>
 
                   <div className="item col-md-6">
                     <figure className="rounded">
-                      <img src="./assets/img/photos/pp3.jpg" alt="" />
+                      <img src="/img/photos/pp3.jpg" alt="" />
                     </figure>
                   </div>
 
                   <div className="item col-md-6">
                     <figure className="rounded">
-                      <img src="./assets/img/photos/pp4.jpg" alt="" />
+                      <img src="/img/photos/pp4.jpg" alt="" />
                     </figure>
                   </div>
 
                   <div className="item col-md-6">
                     <figure className="rounded">
-                      <img src="./assets/img/photos/pp5.jpg" alt="" />
+                      <img src="/img/photos/pp5.jpg" alt="" />
                     </figure>
                   </div>
                 </div>
