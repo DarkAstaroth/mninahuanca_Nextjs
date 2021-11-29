@@ -3,6 +3,7 @@ import firebaseConfig from "./config";
 import "firebase/auth";
 import "firebase/firestore";
 import "firebase/storage";
+import Router from "next/router";
 
 class Firebase {
   constructor() {
@@ -14,6 +15,17 @@ class Firebase {
     this.storage = app.storage();
   }
 
+  // registrar un usuario
+  async signUp(name, email, password) {
+    const newUser = await this.auth.createUserWithEmailAndPassword(
+      email,
+      password
+    );
+    return await newUser.user.updateProfile({
+      displayName: name,
+    });
+  }
+
   // inicia sesion del usuario
   async login(email, password) {
     return this.auth.signInWithEmailAndPassword(email, password);
@@ -21,8 +33,9 @@ class Firebase {
 
   // cierra la sesion del usuaro
 
-  async cerrarSesion() {
+  async LogOut() {
     await this.auth.signOut();
+    Router.push("/");
   }
 }
 

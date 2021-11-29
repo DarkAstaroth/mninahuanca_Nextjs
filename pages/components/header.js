@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FirebaseContext } from "../../firebase";
 
 const Header = () => {
+  const { user, firebase } = useContext(FirebaseContext);
   return (
     <>
       <nav className="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
@@ -66,6 +68,19 @@ const Header = () => {
                 className="navbar-nav flex-row align-items-center ms-auto"
                 data-sm-skip="true"
               >
+                {user ? (
+                  <li className="nav-item">
+                    <Link href="#">
+                      <a
+                        className="nav-link"
+                        onClick={() => firebase.LogOut()}
+                      >
+                        Log Out
+                      </a>
+                    </Link>
+                  </li>
+                ) : null}
+
                 <li className="nav-item d-none d-md-block">
                   <a
                     href="./contact.html"

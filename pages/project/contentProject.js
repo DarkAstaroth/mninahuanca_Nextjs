@@ -7,7 +7,7 @@ const ContentProject = (props) => {
         <div className="container pb-14 pb-md-16">
           <div className="row">
             <div className="col-12">
-              <article className="mt-n21">
+              <article className="mt-n18">
                 <figure className="rounded mb-8 mb-md-12">
                   <img src="/img/photos/pp1.jpg" alt="" />
                 </figure>

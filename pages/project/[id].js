@@ -2,7 +2,7 @@ import { useRouter } from "next/dist/client/router";
 import React, { useContext, useEffect, useState } from "react";
 import Page404 from "../404";
 import ContentProject from "./contentProject";
-import HeaderProject from "./heagerProject";
+import HeaderProject from "./headerProject";
 import { FirebaseContext } from "../../firebase";
 import Loading from "../components/loading";
 
@@ -26,7 +26,7 @@ const Project = () => {
       const getProject = async () => {
         const projectQuery = await firebase.db.collection("projects").doc(id);
         const project = await projectQuery.get();
-        console.log(project.data);
+
         if (project.exists) {
           setProject(project.data());
           setConsultarBD(false);
@@ -36,7 +36,7 @@ const Project = () => {
         }
       };
       getProject();
-      console.log(error);
+
     }
     // eslint-disable-next-line
   }, [id]);
