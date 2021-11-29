@@ -8,9 +8,8 @@ const PortfolioHeader = () => {
           <div className="row">
             <div className="col-md-9 col-lg-7 col-xl-5 mx-auto">
               <h1 className="display-1 mb-3">My Porfolio</h1>
-              <p className="lead px-xxl-10">
-                Copy any custom block snippet below and paste it on your page to
-                build your website easily.
+              <p className="lead px-xxl-3">
+              These are all my projects that I carry out throughout my career in the world of web development, enjoy it and I hope you like it
               </p>
             </div>
           </div>

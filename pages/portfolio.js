@@ -24,10 +24,13 @@ const Portfolio = () => {
                     key={project.id}
                     id={project._id}
                     title={project.title}
+                    urlImage={project.urlImage}
+                    slug={project.slug}
+                    type={project.type}
                   />
                 ))}
               </div>
-              <hr />
+              
             </div>
           </div>
         </section>
