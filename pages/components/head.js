@@ -5,7 +5,7 @@ const HeadPage = (props) => {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href="/mn-favicon.png" />
+        <link rel="shortcut icon" href="img/favicon-3.png" />
         <title>{props.title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

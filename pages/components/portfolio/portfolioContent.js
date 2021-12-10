@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PortfolioContent = (props) => {
-  const url = `/project/${props.id}`;
+  const url = `/project/${props.slug}`;
 
   return (
     <>

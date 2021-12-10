@@ -5,13 +5,12 @@ import ContentProject from "./contentProject";
 import HeaderProject from "./headerProject";
 import { FirebaseContext } from "../../firebase";
 import Loading from "../components/loading";
-
 import HeadPage from "../components/head";
 
 const Project = () => {
   const router = useRouter();
   const {
-    query: { id },
+    query: { slug },
   } = router;
 
   const [error, setError] = useState(false);
@@ -22,13 +21,15 @@ const Project = () => {
   const { firebase } = useContext(FirebaseContext);
 
   useEffect(() => {
-    if (id && consultarBD) {
+    if (slug && consultarBD) {
       const getProject = async () => {
-        const projectQuery = await firebase.db.collection("projects").doc(id);
-        const project = await projectQuery.get();
+        const collectionRef = firebase.db.collection("projects");
+        const snapshot = await collectionRef.where("slug", "==", slug).get();
 
-        if (project.exists) {
-          setProject(project.data());
+        if (!snapshot.empty) {
+          snapshot.forEach((doc) => {
+          setProject(doc.data());
+          });
           setConsultarBD(false);
         } else {
           setError(true);
@@ -36,10 +37,9 @@ const Project = () => {
         }
       };
       getProject();
-
     }
     // eslint-disable-next-line
-  }, [id]);
+  }, [slug]);
 
   if (Object.keys(project).length === 0 && !error) return <Loading />;
 
@@ -49,8 +49,9 @@ const Project = () => {
         <Page404 />
       ) : (
         <>
-          <HeadPage title={project.title}></HeadPage>
-          <HeaderProject props={project} /> <ContentProject props={project} />
+          <HeadPage props={project} />
+          <HeaderProject props={project} />
+          <ContentProject props={project} />
         </>
       )}
     </>

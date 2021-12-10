@@ -71,10 +71,7 @@ const Header = () => {
                 {user ? (
                   <li className="nav-item">
                     <Link href="#">
-                      <a
-                        className="nav-link"
-                        onClick={() => firebase.LogOut()}
-                      >
+                      <a className="nav-link" onClick={() => firebase.LogOut()}>
                         Log Out
                       </a>
                     </Link>

@@ -11,14 +11,13 @@ const HeaderProject = ({ props }) => {
                 <div className="post-header">
                   <div className="post-category text-line">
                     <a href="#" className="hover" rel="category">
-                      Identity
+                      {props.type}
                     </a>
                   </div>
 
                   <h1 className="display-1 mb-3">{props.title}</h1>
                   <p className="lead px-md-12 px-lg-12 px-xl-15 px-xxl-18">
-                    Integer posuere erat a ante venenatis dapibus posuere.
-                    Maecenas faucibus mollis interdum.
+                    {props.shortDesc}
                   </p>
                 </div>
               </div>
