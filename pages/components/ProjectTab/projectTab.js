@@ -9,8 +9,10 @@ import Swal from "sweetalert2";
 const STATE_INICIAL = {
   title: "",
   slug: "",
+  projectType: "",
   shortDesc: "",
   url: "",
+  gitHubURL: "",
   langs: [],
   largeDesc: "",
   urlPhoto: "",
@@ -41,7 +43,8 @@ const ProjectTab = () => {
   const { values, errors, submitFrom, handleChange, handleSubmit, handleBlur } =
     useValidation(STATE_INICIAL, validateCreateProject, registerProject);
 
-  const { title, slug, shortDesc, url, largeDesc } = values;
+  const { title, slug, projectType, shortDesc, url, gitHubURL, largeDesc } =
+    values;
 
   const router = useRouter();
 
@@ -109,11 +112,13 @@ const ProjectTab = () => {
       const project = {
         title,
         slug,
+        projectType,
         shortDesc,
         url,
+        gitHubURL,
         largeDesc,
         langs: langsArr,
-        urlImage
+        urlImage,
       };
       console.log(project);
 
@@ -176,6 +181,26 @@ const ProjectTab = () => {
 
                   <div className="col-12">
                     <div className="form-floating mb-4">
+                      <select
+                        name="projectType"
+                        id="frm_projectType"
+                        className="form-control border-2"
+                        value={projectType}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                      >
+                        <option value="" selected disabled hidden>
+                          Select one
+                        </option>
+                        <option value="FrontEnd">FrontEnd</option>
+                        <option value="BackEnd">BackEnd</option>
+                      </select>
+                      <label htmlFor="frm_projectType">Project Type *</label>
+                    </div>
+                  </div>
+
+                  <div className="col-12">
+                    <div className="form-floating mb-4">
                       <input
                         id="frm_shortDesc"
                         type="shortDesc"
@@ -203,6 +228,22 @@ const ProjectTab = () => {
                         onBlur={handleBlur}
                       />
                       <label htmlFor="frm_slug">Project URL*</label>
+                    </div>
+                  </div>
+
+                  <div className="col-12">
+                    <div className="form-floating mb-4">
+                      <input
+                        id="frm_gitHubURL"
+                        type="text"
+                        name="gitHubURL"
+                        className="form-control border-2"
+                        required="required"
+                        value={gitHubURL}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                      />
+                      <label htmlFor="frm_gitHubURL">GitHub URL*</label>
                     </div>
                   </div>
 
