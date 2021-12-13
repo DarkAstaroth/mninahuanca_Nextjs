@@ -4,6 +4,7 @@ import PortfolioHeader from "./components/portfolio/portfolioHeader";
 import useProjects from "../hooks/useProjects";
 import PortfolioContent from "./components/portfolio/portfolioContent";
 import Loading from "./components/loading";
+import ContactForm from "./components/home/contactForm";
 
 const Portfolio = () => {
   const { projects } = useProjects();
@@ -30,7 +31,25 @@ const Portfolio = () => {
                   />
                 ))}
               </div>
-              
+              <section className="wrapper bg-light">
+                <div className="container">
+                  <div className="row">
+                    <div className="col col-md-8 mx-auto">
+                      <div className="card   gradient-7">
+                        <div className="card-body p-3 p-md-5 text-center text-lg-start">
+                          <h3 className="display-6 text-white text-center">
+			    Coming Soon More Projects!
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div className="row">
+                <ContactForm />
+              </div>
             </div>
           </div>
         </section>

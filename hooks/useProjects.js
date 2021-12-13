@@ -10,7 +10,6 @@ const useProjects = (orden, type) => {
     const getProjects = async () => {
       try {
         firebase.db.collection("projects").onSnapshot(handleSnapchot);
-	console.log()
       } catch (error) {
         console.log(error);
       }
