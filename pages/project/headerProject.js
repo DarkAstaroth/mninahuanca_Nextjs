@@ -11,7 +11,7 @@ const HeaderProject = ({ props }) => {
                 <div className="post-header">
                   <div className="post-category text-line">
                     <a href="#" className="hover" rel="category">
-                      {props.type}
+                      {props.projectType}
                     </a>
                   </div>
 

@@ -3,7 +3,7 @@ import React from "react";
 const ContactForm = () => {
   return (
     <>
-      <section className="wrapper bg-light">
+      <section id="contact" className="wrapper bg-light">
         <div className="container py-10 py-md-10">
           <div className="card bg-soft-primary">
             <div className="card-body p-10">

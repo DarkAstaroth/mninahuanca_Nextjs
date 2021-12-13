@@ -24,14 +24,16 @@ const Header = () => {
             </div>
             <div className="navbar-collapse offcanvas-nav">
               <div className="offcanvas-header d-lg-none d-xl-none">
-                <a href="./index.html">
-                  <Image
-                    src="/img/mninahuanca-white.png"
-                    alt="Manuel Ninahuanca"
-                    width="150 "
-                    height="24.5"
-                  />
-                </a>
+                <Link href="/">
+                  <a>
+                    <Image
+                      src="/img/mninahuanca-white.png"
+                      alt="Manuel Ninahuanca"
+                      width="150 "
+                      height="24.5"
+                    />
+                  </a>
+                </Link>
                 <button
                   type="button"
                   className="btn-close btn-close-white offcanvas-close offcanvas-nav-close"
@@ -79,12 +81,11 @@ const Header = () => {
                 ) : null}
 
                 <li className="nav-item d-none d-md-block">
-                  <a
-                    href="./contact.html"
-                    className="btn btn-sm btn-primary rounded-pill"
-                  >
-                    Contact
-                  </a>
+                  <Link href="/#contact">
+                    <a className="btn btn-sm btn-primary rounded-pill">
+                      Contact
+                    </a>
+                  </Link>
                 </li>
                 <li className="nav-item d-lg-none">
                   <div className="navbar-hamburger">

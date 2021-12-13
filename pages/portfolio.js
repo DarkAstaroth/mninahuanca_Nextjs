@@ -27,7 +27,7 @@ const Portfolio = () => {
                     title={project.title}
                     urlImage={project.urlImage}
                     slug={project.slug}
-                    type={project.type}
+                    type={project.projectType}
                   />
                 ))}
               </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 const ContentProject = ({ props }) => {
   return (
@@ -35,15 +36,17 @@ const ContentProject = ({ props }) => {
                               ))}
                             </li>
                             <li>
-                              <a href="#" className="more hover">
-                                See Project
-                              </a>
+                              <Link href={props.url}>
+                                <a target="_blank" className="more hover">See Project</a>
+                              </Link>
                             </li>
                             <li>
-                              <a className="btn btn-navy rounded-pill mt-4">
-                                <i className="uil uil-github"></i> GitHub
-                                Project
-                              </a>
+                              <Link href={props.gitHubURL}>
+                                <a target="_blank" className="btn btn-navy rounded-pill mt-4">
+                                  <i className="uil uil-github"></i> GitHub
+                                  Project
+                                </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>
