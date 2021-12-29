@@ -41,11 +41,14 @@ const Footer = () => {
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous"
+        strategy="beforeInteractive"
       ></Script>
 
-      <Script src="/js/headhesive.js"></Script>
-      <Script src="/js/isotope.pkgd.min.js"></Script>
-      <Script src="/js/imagesloaded.pkgd.min.js"></Script>
+      {/* <Script src="/js/headhesive.js" strategy="beforeInteractive"></Script>
+      <Script src="/js/isotope.pkgd.min.js" strategy="beforeInteractive"></Script>
+      <Script src="/js/imagesloaded.pkgd.min.js" strategy="beforeInteractive"></Script>
+      <Script src="/js/owl.carousel.min.js" strategy="beforeInteractive"></Script> */}
+      <Script src="/js/plugins.js" strategy="beforeInteractive"></Script>
       <Script src="/js/theme.js"></Script>
     </>
   );

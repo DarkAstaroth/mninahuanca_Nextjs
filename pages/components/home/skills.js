@@ -59,7 +59,7 @@ const Skills = () => {
                 <div className="col text-center">
                   <figure className="px-3 px-md-0 px-xxl-2">
                     <Image
-                      src="/img/devIcons/html-5.svg"
+                      src="/img/devIcons/html5.svg"
                       alt=""
                       width="127.5"
                       height="85.3"

@@ -68,7 +68,7 @@ const Header = () => {
             <div className="navbar-other w-100 d-flex ms-auto">
               <ul
                 className="navbar-nav flex-row align-items-center ms-auto"
-                data-sm-skip="true"
+                // data-sm-skip="true"
               >
                 {user ? (
                   <li className="nav-item">
@@ -87,16 +87,7 @@ const Header = () => {
                     </a>
                   </Link>
                 </li>
-                <li className="nav-item d-lg-none">
-                  <div className="navbar-hamburger">
-                    <button
-                      className="hamburger animate plain"
-                      data-toggle="offcanvas-nav"
-                    >
-                      <span></span>
-                    </button>
-                  </div>
-                </li>
+                
               </ul>
             </div>
           </div>

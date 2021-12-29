@@ -9,8 +9,7 @@ const SkillsHeader = () => {
             <div className="col-md-9 col-lg-7 col-xl-5 mx-auto">
               <h1 className="display-1 mb-3">My Skills</h1>
               <p className="lead px-xxl-10">
-                Copy any custom block snippet below and paste it on your page to
-                build your website easily.
+              I like to be updated with the most modern and functional technologies on the market
               </p>
             </div>
           </div>
