@@ -54,38 +54,6 @@ const ContentProject = ({ props }) => {
                     </div>
                   </div>
 
-                  <div className="row mt-5 gx-md-6 gy-6">
-                    <div className="item col-md-6">
-                      <figure className="rounded">
-                        <img src={props.urlImage} alt="image" />
-                      </figure>
-                    </div>
-
-                    <div className="item col-md-6">
-                      <figure className="rounded">
-                        <img src={props.urlImage} alt="image" />
-                      </figure>
-                    </div>
-
-                    <div className="item col-md-6">
-                      <figure className="rounded">
-                        <img src={props.urlImage} alt="image" />
-                      </figure>
-                    </div>
-
-                    <div className="item col-md-6">
-                      <figure className="rounded">
-                        <img src={props.urlImage} alt="image" />
-                      </figure>
-                    </div>
-                  </div>
-
-                  <div className="row mt-8 mt-md-12">
-                    <div className="col-md-10 offset-md-1 text-justify">
-                      <h2 className="mb-4">Quam Mollis Bibendum</h2>
-                      <p>{props.largeDesc}</p>
-                    </div>
-                  </div>
                 </article>
               </div>
             </div>

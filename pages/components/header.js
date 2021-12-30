@@ -87,6 +87,17 @@ const Header = () => {
                     </a>
                   </Link>
                 </li>
+
+                <li className="nav-item d-lg-none">
+                  <div className="navbar-hamburger">
+                    <button
+                      className="hamburger animate plain"
+                      data-toggle="offcanvas-nav"
+                    >
+                      <span></span>
+                    </button>
+                  </div>
+                </li>
                 
               </ul>
             </div>

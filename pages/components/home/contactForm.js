@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
+
   return (
     <>
       <section id="contact" className="wrapper bg-light">
@@ -25,7 +29,10 @@ const ContactForm = () => {
                 </div>
 
                 <div className="col-lg-6">
-                  <form className="contact-form needs-validation">
+                  <form
+                    // onSubmit={handleSubmit}
+                    // className="contact-form needs-validation"
+                  >
                     <div className="messages"></div>
                     <div className="row gx-4">
                       <div className="col-md-6">
@@ -37,7 +44,8 @@ const ContactForm = () => {
                             className="form-control border-0"
                             placeholder="Jane"
                             required="required"
-
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                           />
                           <label htmlFor="frm_name">Name *</label>
                           <div className="invalid-feedback">
@@ -55,7 +63,8 @@ const ContactForm = () => {
                             className="form-control border-0"
                             placeholder="jane.doe@example.com"
                             required="required"
-
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                           />
                           <label htmlFor="frm_email">Email *</label>
                           <div className="valid-feedback">Looks good!</div>
@@ -73,6 +82,8 @@ const ContactForm = () => {
                             className="form-control border-0"
                             placeholder="Your message"
                             style={{ height: 150 }}
+                            value={msg}
+                            onChange={(e) => setMsg(e.target.value)}
                           ></textarea>
                           <label htmlFor="frm_message">Message *</label>
                           <div className="valid-feedback">Looks good!</div>

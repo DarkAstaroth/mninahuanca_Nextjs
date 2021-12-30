@@ -20,11 +20,11 @@ const SkillCarousel = () => {
         <div className="container py-8 py-md-8">
           <div
             className="carousel owl-carousel clients mb-0"
-            data-margin="30"
+            data-margin="10"
             data-loop="true"
             data-dots="false"
             data-autoplay="true"
-            data-autoplay-timeout="3000"
+            data-autoplay-timeout="2000"
             data-responsive='{"0":{"items": "2"}, "768":{"items": "4"}, "992":{"items": "5"}, "1200":{"items": "6"}, "1400":{"items": "7"}}'
           >
             {langs.map((e) => (
